@@ -1,0 +1,40 @@
+
+
+.resizedTextbox {width: 50px; height: 20px}
+
+
+.prescription {
+    border: solid;
+    border-width: 5px;
+    text-align: center;
+    background-color: rgb(224, 235, 198);
+    margin: 30px 50px 30px 50px;
+}
+
+.result {
+    font-weight: 900;
+    font-size: 20px;
+} 
+
+.checkingSheet {
+    border: solid;
+    border-width: 5px;
+    text-align: center;
+    background-color: aliceblue;
+    margin: 10px 50px 30px 50px;
+}
+
+ 
+
+.bottle {
+    border: solid;
+    border-width: 5px;
+    text-align: center;
+    background-color: rgb(231, 212, 226) ;
+    margin: 10px 50px 30px 50px;
+}
+
+#additionNote {
+    font-weight: bold;
+    color: rgb(32, 72, 159);
+}

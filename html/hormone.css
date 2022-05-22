@@ -1,0 +1,51 @@
+
+.heading h2 {
+    text-align: center;
+   padding: 20px;
+}
+
+.ingredient-select {
+    padding-bottom: 30px;
+}
+
+.estradiol {
+    color:  rgb(239, 93, 93);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
+}
+
+.estriol  {
+    color:rgb(25, 52, 147);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+}
+
+.biest {
+    border-style: solid;
+    border-width: thick;
+    text-align: center;
+
+}
+.testosterone {
+    border-style: solid;
+    border-width: thick;
+    text-align: center;
+    padding: 10px
+    
+}
+
+.progesterone {
+    border-style: solid;
+    border-width: thick;
+    text-align: center;
+    padding: 10px
+
+}
+
+.DHEA {
+    border-style: solid;
+    border-width: thick;
+    text-align: center;
+    padding: 10px
+}
