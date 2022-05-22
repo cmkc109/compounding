@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<header> Calculator tool 
+</header>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+<body>
+    <div class ="sectionone">
+        <h1> Patient information </h1>
+        <p>Weight (kg): </p><input type="text" id= "weight"></p> 
+
+    </div>
+
+    <div class= "sectiontwo">
+        <h1> Drug information </h1>
+        <p> Name of medication: <input type ="text" id="drugname"> </p>
+        <p>Concentration of medication:  <input type="text" id="concentration"> mg per ml </p>
+        <p>Recommended range for use: <input type id="lowerrange"> mg to <input type id="upperrange">mg /kg /ml</p>
+        <p>The recommended range is <span id = "multiplybylowweight"></span> mg to <span id="upperRangeWeight"> </span> mg per day </p>
+        
+    <div class = "sectionthree"></div>
+        <h1> Rx information </h1>
+        <p> Dose (mg) required per day: <input type="text" id = "dosePerDay"> </p>
+        <p> Is the dose within recommended range? <span id= "doseRangeConfirm"> </span></p>
+        <p> Volume (ml) needed per day: <span id = "volumePerDay"></span> </p> 
+        <p> Volume (ml) needed per 14 day supply: <span id = "volumePerTwoWeeks"></span></p>
+       
+     <p><input id=submitButton type="submit" value="Submit"></p>      
+
+    </div>
+
+    <div class = "sectionfour">
+        <h1> Compounding information </h1>
+        <p> Volume (ml): <input type ="text" id="volumeCompounded"> </p>
+        <p> Amount of ingredient needed in mg: <span id="ingredientInMg"></span> </p>
+        <p> Amount of ingredient needed in g: <span id="ingredientInGram"></span> </p>
+
+        <p><input id=submitButtonTwo type="submit" value="Submit"></p>   
+
+    </div>
+
+<script src="javascript.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
