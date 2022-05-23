@@ -43,15 +43,50 @@ btnTest.addEventListener('click', event => {
   });
 
 function testFunction () {
-jsTestInMg = document.getElementById("testDose").value 
+jsTestInMg = document.getElementById("testDose").value; 
 jsVolume = document.getElementById("prescribed").value; 
-var vehicleVolume = document.getElementById ("vehicle-select")
+const vehicleVolume = document.getElementById ("vehicle-select")
 vehicleValue = vehicleVolume.options[vehicleVolume.selectedIndex].value; 
 document.getElementById("testDoseTotalMg").innerHTML = jsTestInMg / vehicleValue * jsVolume;
 document.getElementById("testDoseTotalGm").innerHTML = jsTestInMg / vehicleValue * jsVolume / 1000;
 
 
 }
+
+// Progesterone section
+
+let btnProg= document.getElementById("submitProg");
+btnProg.addEventListener('click', event => {
+  progFunction();
+});
+
+function progFunction () {
+jsProgInMg = document.getElementById("progDose").value;
+jsVolume = document.getElementById("prescribed").value;
+const vehicleVolume = document.getElementById("vehicle-select");
+vehicleValue = vehicleVolume.options[vehicleVolume.selectedIndex].value; 
+document.getElementById("progDoseTotalMg").innerHTML = jsProgInMg / vehicleValue * jsVolume;
+document.getElementById("progDoseTotalGm").innerHTML = jsProgInMg / vehicleValue * jsVolume / 1000;
+
+}
+
+// DHEA section
+let btnDHEA = document.getElementById("subtDHEA");
+btnDHEA.addEventListener('click', event => {
+  dheaFunction();
+});
+
+function dheaFunction () {
+  jsDHEAInMg = document.getElementById('dheaDose').value;
+  jsVolume = document.getElementById("prescribed").value;
+  const vehicleVolume = document.getElementById("vehicle-select");
+  vehicleValue = vehicleVolume.options[vehicleVolume.selectedIndex].value;  
+  document.getElementById("dheaDoseTotalMg").innerHTML = jsDHEAInMg / vehicleValue * jsVolume;
+  document.getElementById("dheaDoseTotalGm").innerHTML = jsDHEAInMg / vehicleValue * jsVolume / 1000;
+}
+
+
+
 
 // Hiding section
 
