@@ -71,13 +71,13 @@ document.getElementById("progDoseTotalGm").innerHTML = jsProgInMg / vehicleValue
 }
 
 // DHEA section
-let btnDHEA = document.getElementById("subtDHEA");
+let btnDHEA = document.getElementById("submitDHEA");
 btnDHEA.addEventListener('click', event => {
   dheaFunction();
 });
 
 function dheaFunction () {
-  jsDHEAInMg = document.getElementById('dheaDose').value;
+  jsDHEAInMg = document.getElementById("dheaDose").value;
   jsVolume = document.getElementById("prescribed").value;
   const vehicleVolume = document.getElementById("vehicle-select");
   vehicleValue = vehicleVolume.options[vehicleVolume.selectedIndex].value;  
