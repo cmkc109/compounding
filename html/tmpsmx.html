@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+   
+</header>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trimethoprim (TMP) and sulfamethoxazole (SMX)</title>
+</head>
+<body>
+    <p> Trimethoprim 8mg per mL </p>
+    <p> Sulfamethoxazole 40mg per mL </p>
+    <p> Do not use SMX component if child is less than 3 years old</p>
+    <p> 8 mg/kg/day (trimethoprim component) PO divided every 12 hours (Max: 320 mg trimethoprim/1,600 mg sulfamethoxazole/day) for 10 days.</p>
+<p> 1 tablet of regular strength Sulfatrim is 400/80mg </p>
+<p> Each mL of the suspension contains 40mg of SMP and 8mg of TMP. So, you can make 10mL of the suspension with 1 RS tablet</p>
+    <table style="width:60%">
+        <tr>
+          <th>Trimethoprim</th>
+          <th>Sulfamethoxazole</th>
+          <th>Volume</th>
+        </tr>
+        <tr>
+          <td> 8mg</td>
+          <td> 40mg</td>
+          <td> per mL</td>
+        </tr>
+        <tr>
+          <td>80mg</td>
+          <td>400mg</td>
+          <td>per 10mL = 1 RS tablet</td>
+        </tr>
+      </table>
+    
+    <p> kg to pound conversion: </p>
+    <p> <input type="text" id="kgConvertToLb" class="resizedTextbox"> kg
+         <button id="kglb"> Convert to </button>  <span id="lbConvertToKg">= </span> lb </p>
+    
+    <p> Pound to kg conversion</p>
+    <p> <input type="text" id="poundToKg" class="resizedTextbox"> lb
+        <button id="lbkg"> Convert to </button>  <span id="poundConverted">= </span> kg </p>
+</body>
+
+<style>
+
+table th {
+    background-color: rgb(219, 229, 229);
+  
+}
+
+table {
+  border:1px solid black;
+  margin-left: 200px;
+  text-align: center;
+}
+
+    .resizedTextbox {width: 50px; height: 20px}
+</style>
+
+<script>
+
+let btn = document.getElementById("kglb");
+btn.addEventListener('click', event => {
+    kgToLb();
+  });
+
+function kgToLb () {
+    let jsKg = document.getElementById("kgConvertToLb").value
+    let jsLb = jsKg * 2.2
+    document.getElementById("lbConvertToKg").innerHTML = jsLb.toFixed(2)
+
+}
+
+let btnTwo = document.getElementById("lbkg");
+btnTwo.addEventListener('click', event => {
+    LbToKg();
+  });
+
+function LbToKg() {
+    let jsPound = document.getElementById("poundToKg").value
+    let jsKilogram = jsPound / 2.2
+    document.getElementById("poundConverted").innerHTML = jsKilogram.toFixed(2)
+
+}
+</script>
+</html>
