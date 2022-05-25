@@ -1,6 +1,28 @@
 
+
+
 .sectionone {
     font-weight: bold;
     
 }
 
+.div1 {
+    width: 300px;
+    height: 100px;  
+    padding: 50px;
+    position: absolute; right: 10;
+    border: 1px solid red;
+  }
+
+body {
+    background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000&t=st=1653426475~exp=1653427075~hmac=0c84b11b351e531a4394ced42341089749ec0c09034ce337f8777233fd541591');
+}
+
+
+
+.jumbotron {
+    text-align: center;
+    border: solid black;
+    border-width: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
