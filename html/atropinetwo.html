@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<header> 
+    <link rel = "stylesheet" href="atropine.css">
+</header>
+
+<div class="heading"> 
+    <h2> Atropine verification tool  </h2>
+</div>
+
+<div class= "conc-select"><strong>Select concentration</strong> </div>
+<label for = "conc-select"> Choose a concentration</label>
+<select name ="conc" id="conc-select">
+    <option value = ""> --Please select concentration--</option>
+    <option value = "0.01"> 0.01%</option>
+    <option value = "0.02"> 0.02%</option>
+    <option value = "0.025"> 0.025%</option>
+    <option value = "0.05"> 0.05%</option>
+    <option value = ""> --Irregular--</option>
+    <option value = "0.015"> 0.015%</option>
+    <option value = "0.03"> 0.03%</option>
+    <option value = "0.04"> 0.04%</option>
+    <option value = "0.07"> 0.07%</option>
+    <option value = ""> --High concentration--</option>
+    <option value = "0.1"> 0.1%</option>
+    <option value ="0.5">0.5%</option>
+</select>
+
+<body>
+ 
+<div class = "prescription">
+    <h3> Prescription info </h3>
+    <p> Please enter the concentration on the Rx: <input type = "text" id="rxConc" class="resizedTextbox"> % </p>
+    <button onclick="atropine()">Get result</button>
+    <p class="result"> Result: <span id= "prescriptionResult"> </span></p> 
+    <p id="additionNote"> </p>
+</div>
+
+<div class ="checkingSheet">
+<h3> Mixture Sheet </h3>
+<p> Enter mixture number (4 digit): <input type = "text" id = "mix#" class="resizedTextbox"> </p> 
+<p> Enter formula ID (4 digit): <input type = "text" id = "formulaID" class = "resizedTextbox"> </p> 
+<br>
+<button onclick="sheet()">Get result</button>
+<p class ="result"> Result: <span id ="sheetResult"></span> </p> 
+</div>
+
+<div class ="bottle">
+<h3> Atropine bottle </h3>
+<p> Concentration on the bottle: <input type = "text" id="bottleConc" class="resizedTextbox"> % </p>
+<p> Enter mixture number (4 digit): <input type = "text" id = "bottleMix#" class="resizedTextbox"> </p> 
+<br>
+<button onclick="bottleConc()">Concentration</button>
+<button onclick="bottleNum()">Mixture #</button>
+<p class="result"> Result for concentration: <span id ="bottleConcResult"> </span></p> 
+<p class="result"> Result for mixture #: <span id ="bottleNumResult"> </span></p> 
+</div>
+</div>
+
+<div class="buttonCheck">
+<button  onclick="finalCheck()"> FINAL CHECK </button>
+</div>
+
+</body>
+
+
+
+<script src="atropinetwo.js"></script>
+</html>
+
