@@ -67,9 +67,10 @@ function bottleNum() {
 function finalCheck (){
 if(document.getElementById("prescriptionResult").innerHTML == "Correct" &&
 document.getElementById("bottleNumResult").innerHTML == "Correct" &&
-document.getElementById("bottleConcResult").innerHTML == "Correct" ) {
+document.getElementById("bottleConcResult").innerHTML == "Correct" &&
+document.getElementById("sheetResult").innerHTML == "Correct" ) {
   window.alert("PERFECT! GO AHEAD and dispense the medication!")
 } else {
-  window.alert("You did not pass all the steps. Please check again")
+  window.alert("WARNING. You did not pass all the steps. Please check again")
   }
 };
